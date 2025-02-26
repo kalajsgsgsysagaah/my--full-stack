@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">EventMgr</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#add-event">Add Event</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to EventMgr</h1>
+        <p>Your one-stop solution for managing events</p>
+        <a href="#events" class="cta">Explore Events</a>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <!-- Event cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Add Event Form -->
+    <section id="add-event" class="add-event">
+        <h2>Add a New Event</h2>
+        <form id="eventForm">
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required>
+
+            <label for="eventDescription">Event Description:</label>
+            <textarea id="eventDescription" name="eventDescription" required></textarea>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="eventDate">Event Time:</label>
+            <input type="time" id="eventDate" name="eventtime" required>
+
+
+            <button type="submit">Add Event</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 EventMgr. All rights reserved.</p>
+    </footer>
+
+    <script src="event.js"></script>
+</body>
+</html>

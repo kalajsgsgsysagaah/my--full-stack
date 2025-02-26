@@ -1,0 +1,66 @@
+
+
+/* style.css */
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4CAF50; /* Fallback background color */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://wallpapers.com/images/hd/snake-game-1680-x-1050-background-6syqer1fr6oahe0b.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+h1 {
+    color: white; /* Change the title color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better visibility */
+    margin-bottom: 20px; /* Space between title and canvas */
+}
+
+#speedButtons {
+    margin-bottom: 20px; /* Space between speed buttons and canvas */
+}
+
+#gameContainer {
+    position: relative; /* Position relative to center the button */
+}
+
+button {
+    margin: 0 10px; /* Space between speed buttons */
+    padding: 10px 15px; /* Button padding */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background-color: #2196F3; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+}
+
+canvas {
+    border: 5px solid #333; /* Border for the game area */
+    background-color: #A3D977; /* Game area color */
+}
+
+#startButton {
+    position: absolute; /* Position absolute to center it */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the button to align it perfectly */
+}
+
+#scoreDisplay {
+    margin-top: 20px; /* Space above the score display */
+    font-size: 20px; /* Font size for the score */
+    color: white; /* Score color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+}
+

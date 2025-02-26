@@ -1,0 +1,63 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,gold,black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background: linear-gradient(135deg, chocolate, #ff8c00);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.choices button {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #007bff, #00c3ff);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.choices button:hover {
+  background: linear-gradient(135deg, #0056b3, #0099ff);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#scores {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: white;
+}
